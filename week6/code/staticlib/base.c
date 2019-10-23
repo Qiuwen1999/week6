@@ -8,6 +8,7 @@ void showarray(int *a,int n)
 void initarray(int *a,int n)
 { 
   int i;
+  srand((unsigned)time(NULL));
   for(i=0;i<n;i++)
   a[i]=rand()%100;
    
