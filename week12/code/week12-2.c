@@ -4,7 +4,7 @@ int main()
 {
   pid_t p;
  int fd[2],rn,wn,psize;
- char rbuf[1],wbuf[30];
+ char rbuf[10],wbuf[30];
  memset(rbuf,0,sizeof(rbuf));
  memset(wbuf,0,sizeof(wbuf));
  pipe(fd);
@@ -43,4 +43,4 @@ else{
      close(fd[0]);
      return 0;
      }
-
+}
